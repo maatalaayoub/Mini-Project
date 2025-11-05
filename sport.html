@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/favvicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Le Maroc</title>
+
+    <style>
+        /* Header */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+            padding-left: 20px;
+            padding-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            transform: scale(1.03);
+        }
+
+        .ilogo {
+            max-width: 35px;
+            max-height: 35px;
+        }
+
+        .spanlogo {
+            font-size: 1.1rem;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .img {
+            width: 23px;
+        }
+
+        nav a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 0.9rem;
+            text-decoration: none;
+            margin-left: 25px;
+            display: inline-block;
+            border: 1px solid white;
+            border-bottom: 2px solid white;
+            border-radius: 50px;
+
+        }
+
+        #sport {
+            display: inline-flex;
+            align-items: center;
+            color: white;
+            background-color: #6436af;
+            padding: 0px 15px;
+            height: 35px;
+            transition: all 0.3s ease;
+            gap: 5px;
+        }
+
+        #culture,
+        #accueil,
+        #tourisme,
+        #contact {
+            display: inline-flex;
+            align-items: center;
+            padding: 0px 15px;
+            height: 35px;
+            transition: all 0.3s ease;
+            gap: 5px;
+        }
+
+        .navhover:hover {
+            transform: scale(1.03);
+            background-color: #1C2E42;
+            text-decoration: underline;
+        }
+
+        #accueil:hover {
+            transform: scale(1.03);
+        }
+
+        /*MAIN*/
+
+        main {
+            width: 100%;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .imgbg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('img/sport1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+        }
+
+        #sh {
+            color: #7548bd;
+            background-color: white;
+            border-radius: 10px;
+            padding: 0px 10px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 4rem;
+            cursor: default;
+            transition: all 0.3s ease;
+        }
+
+        .sorang {
+            color: #7548bd;
+        }
+
+        @media(max-width: 575px) {
+
+            /* HEADER*/
+
+            .logo {
+                display: none;
+            }
+
+            header {
+                justify-content: center;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+                text-decoration: none;
+                margin-left: 5px;
+            }
+
+            #culture,
+            #tourisme,
+            #sport,
+            #contact,
+            #accueil {
+                padding: 0px 8px;
+                height: 33px;
+                gap: 5px;
+            }
+
+            #contact {
+                display: none;
+            }
+
+            /*MAIN*/
+            .imgbg {
+                height: 250px;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+                margin: 20px 15px 15px;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin-top: 20px;
+            }
+
+            .m-info {
+                padding: 0px 20px;
+            }
+        }
+
+        @media (min-width: 575px) and (max-width: 825px) {
+
+            /* HEADER*/
+
+            .logo {
+                display: none;
+            }
+
+            header {
+                justify-content: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                text-decoration: none;
+                margin-left: 30px;
+            }
+
+            #culture,
+            #tourisme,
+            #sport,
+            #contact,
+            #accueil {
+                padding: 0px 9px;
+                height: 34px;
+                gap: 5px;
+            }
+
+            #contact {
+                display: none;
+            }
+
+            /*MAIN*/
+            p {
+                font-size: 0.9rem;
+            }
+
+            .imgbg {
+                height: 300px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin-top: 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin: 20px 15px 15px;
+            }
+
+            .m-info {
+                padding: 5px 30px;
+            }
+        }
+
+        @media (min-width: 825px) and (max-width: 991px) {
+
+            /* HEADER*/
+
+            header {
+                justify-content: space-between;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+                text-decoration: none;
+                margin-left: 15px;
+            }
+
+            #culture,
+            #tourisme,
+            #accueil,
+            #contact,
+            #sport {
+                padding: 0px 10px;
+                height: 35px;
+                gap: 5px;
+            }
+
+            /*MAIN*/
+            p {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+                margin-top: 25px;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+                margin: 20px 50px;
+                cursor: default;
+            }
+
+            .m-info {
+                padding: 10px 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img class="ilogo" src="icon/star.png" alt="flag maroc">
+            <span class="spanlogo">Le Royaume du Maroc</span>
+        </div>
+        <nav>
+            <a id="accueil" class="navhover" href="index.html"><img id="imga" class="img" src="icon/accueil.png"
+                    alt="Accueil">Accueil</a>
+            <a id="culture" class="navhover" href="culture.html"><img id="imgc" class="img" src="icon/culture.png"
+                    alt="Culture">Culture</a>
+            <a id="tourisme" class="navhover" href="tourisme.html"> <img id="imgt" class="img" src="icon/tour.png"
+                    alt="Tourisme">Tourisme</a>
+            <a id="sport" href="sport.html"><img id="imgs" class="img" src="icon/sport.png" alt="Sport">Sports</a>
+            <a id="contact" class="navhover" href="contact.html"><img id="imgs" class="img" src="icon/contact.png"
+                    alt="Contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="imgbg">
+            <h1><span id="sh">S</span>ports</h1>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/favvicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Le Maroc</title>
+
+    <style>
+        /* Header */
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+            padding-left: 20px;
+            padding-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            transform: scale(1.03);
+        }
+
+        .ilogo {
+            max-width: 35px;
+            max-height: 35px;
+        }
+
+        .spanlogo {
+            font-size: 1.1rem;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .img {
+            width: 23px;
+        }
+
+        nav a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 0.9rem;
+            text-decoration: none;
+            margin-left: 25px;
+            display: inline-block;
+            border: 1px solid white;
+            border-bottom: 2px solid white;
+            border-radius: 50px;
+
+        }
+
+        #culture {
+            display: inline-flex;
+            align-items: center;
+            color: white;
+            background-color: #15ac2c;
+            padding: 0px 15px;
+            height: 35px;
+            transition: all 0.3s ease;
+            gap: 5px;
+        }
+
+        #accueil,
+        #tourisme,
+        #sport,
+        #contact {
+            display: inline-flex;
+            align-items: center;
+            padding: 0px 15px;
+            height: 35px;
+            transition: all 0.3s ease;
+            gap: 5px;
+        }
+
+        .navhover:hover {
+            transform: scale(1.03);
+            background-color: #1C2E42;
+            text-decoration: underline;
+        }
+
+        #accueil:hover {
+            transform: scale(1.03);
+        }
+
+        /*MAIN*/
+        main {
+            width: 100%;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .imgbg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('img/culturebg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+        }
+
+        #sh {
+            color: #20c939;
+            background-color: white;
+            border-radius: 10px;
+            padding: 0px 10px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 4rem;
+            cursor: default;
+            transition: all 0.3s ease;
+        }
+
+        .s {
+            color: #20c939;
+        }
+
+        h2 {
+            color: #1C2E42;
+            font-size: 2rem;
+            margin: 40px 60px;
+            cursor: default;
+            transition: all 0.3s ease;
+        }
+
+        .sblue {
+            font-size: larger;
+            color: #4980BB;
+        }
+
+        .number {
+            font-weight: bold;
+        }
+
+        h3 {
+            margin: 20px;
+            color: #4980BB;
+            cursor: default;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        p {
+            font-size: 1.2rem;
+            text-indent: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .num {
+            font-weight: bold;
+        }
+
+        .m-info {
+            width: 100%;
+            background-color: white;
+            padding: 20px 60px;
+            transition: all 0.3s ease;
+        }
+
+        .images {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+
+        }
+
+        .images img {
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 15px auto;
+            width: 100%;
+            height: 300px;
+            transition: all 0.3s ease;
+        }
+
+        .images img:hover {
+            transform: scale(0.95);
+        }
+        ul{
+            margin: 0px 30px;
+        }
+
+        @media (max-width: 575px) {
+
+            /* HEADER*/
+
+            .logo {
+                display: none;
+            }
+
+            header {
+                justify-content: center;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+                text-decoration: none;
+                margin-left: 5px;
+            }
+
+            #culture,
+            #tourisme,
+            #sport,
+            #contact,
+            #accueil {
+                padding: 0px 8px;
+                height: 33px;
+                gap: 5px;
+            }
+
+            #contact {
+                display: none;
+            }
+
+            /*MAIN*/
+            .imgbg {
+                height: 250px;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+                margin: 20px 15px 15px;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin-top: 20px;
+            }
+
+            .m-info {
+                padding: 0px 20px;
+            }
+
+            .images img {
+                margin: 15px auto;
+                width: 90%;
+                height: 250px;
+            }
+        }
+
+        @media (min-width: 575px) and (max-width: 825px) {
+
+            /* HEADER*/
+
+            .logo {
+                display: none;
+            }
+
+            header {
+                justify-content: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                text-decoration: none;
+                margin-left: 30px;
+            }
+
+            #culture,
+            #tourisme,
+            #sport,
+            #contact,
+            #accueil {
+                padding: 0px 9px;
+                height: 34px;
+                gap: 5px;
+            }
+
+            #contact {
+                display: none;
+            }
+
+            /*MAIN*/
+            p {
+                font-size: 0.9rem;
+            }
+
+            .imgbg {
+                height: 300px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin-top: 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin: 20px 15px 15px;
+            }
+
+            .m-info {
+                padding: 5px 30px;
+            }
+        }
+
+        @media (min-width: 825px) and (max-width: 991px) {
+
+            /* HEADER*/
+
+            header {
+                justify-content: space-between;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+                text-decoration: none;
+                margin-left: 15px;
+            }
+
+            #accueil {
+                padding: 0px 10px;
+                height: 35px;
+                gap: 5px;
+            }
+
+            #culture,
+            #tourisme,
+            #sport,
+            #contact,
+            #accueil {
+                padding: 0px 10px;
+                height: 35px;
+                gap: 5px;
+            }
+
+            /*MAIN*/
+            p {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+                margin-top: 25px;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+                margin: 20px 50px;
+                cursor: default;
+            }
+
+            .m-info {
+                padding: 10px 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img class="ilogo" src="icon/star.png" alt="flag maroc">
+            <span class="spanlogo">Le Royaume du Maroc</span>
+        </div>
+        <nav>
+            <a id="accueil" class="navhover" href="index.html"><img id="imga" class="img" src="icon/accueil.png"
+                    alt="Accueil">Accueil</a>
+            <a id="culture" href="culture.html"><img id="imgc" class="img" src="icon/culture.png"
+                    alt="Culture">Culture</a>
+            <a id="tourisme" class="navhover" href="tourisme.html"> <img id="imgt" class="img" src="icon/tour.png"
+                    alt="Tourisme">Tourisme</a>
+            <a id="sport" class="navhover" href="sport.html"><img id="imgs" class="img" src="icon/sport.png"
+                    alt="Sport">Sports</a>
+            <a id="contact" class="navhover" href="contact.html"><img id="imgs" class="img" src="icon/contact.png"
+                    alt="Contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="imgbg">
+            <h1><span id="sh">La</span>Culture Marocaine</h1>
+        </div>
+        <section>
+            <div class="m-info">
+                <h2><span class="s">La </span>Culture Marocaine : Un Mélange Unique et Envoûtant</h2>
+                <p>La culture <span class="s">marocaine</span> est un véritable voyage à travers le temps, une mosaïque
+                    vivante où se mêlent
+                    traditions millénaires et modernité vibrante. Héritière d’une histoire riche et complexe, elle puise
+                    sa force dans la diversité de ses racines : amazighe, arabe, andalouse, africaine et
+                    méditerranéenne. Chaque région du <span class="s">Maroc</span> raconte son propre récit à travers
+                    ses dialectes, ses
+                    coutumes, sa gastronomie, sa musique et son artisanat. Des montagnes de l’Atlas aux dunes du Sahara,
+                    des médinas animées aux villages paisibles, le pays respire la tolérance, la créativité et la
+                    convivialité.
+
+                    Le <span class="s">Maroc</span> fascine par sa capacité à harmoniser les contrastes : entre
+                    tradition et innovation, entre
+                    sacré et profane, entre ruralité et urbanisme. Ses fêtes colorées, sa cuisine raffinée et ses
+                    expressions artistiques — qu’il s’agisse du Gnawa, de l’Aïta, du Malhoun ou de la calligraphie —
+                    témoignent d’une identité en perpétuelle évolution, ouverte sur le monde mais profondément ancrée
+                    dans son patrimoine.
+
+                    Plus qu’une simple culture, le <span class="s">Maroc</span> incarne une philosophie de vie où
+                    hospitalité, partage et
+                    respect des différences constituent les fondements d’une société fière de son passé et tournée vers
+                    l’avenir.</p>
+                <h2><span class="s">La </span>Tbourida : un art équestre marocain entre tradition et fierté</h2>
+                <h3>Origine et histoire de la Tbourida</h3>
+                <p>L’origine de la <span class="s">Tbourida</span> remonte à plusieurs siècles, à l’époque où les
+                    cavaliers marocains
+                    s’exerçaient à la guerre et à la défense des territoires.
+                    Les tribus arabes, berbères et sahariennes utilisaient la cavalerie pour démontrer leur puissance et
+                    leur habileté au combat. Au fil du temps, ces démonstrations se sont transformées en spectacles
+                    rituels présentés lors des fêtes religieuses, des moussems et des mariages.
+
+                    Le mot <span class="s">Tbourida</span> vient du mot arabe baroud, qui signifie « poudre » — une
+                    référence directe à la
+                    détonation collective des fusils à la fin de la charge.</p>
+                <h3>Quelques <span class="s">Photo</span> :</h3>
+                <div class="images">
+                    <img src="img/tbourida1.jpg" alt="tbourida">
+                    <img src="img/tbourida2.jpg" alt="tbourida">
+                    <img src="img/tbourida3.jpg" alt="tbourida">
+                    <img src="img/tbourida4.jpg" alt="tbourida">
+                    <img src="img/tbourida5.jpg" alt="tbourida">
+                    <img src="img/tbourida6.jpg" alt="tbourida">
+                </div>
+                <h2><span class="s">L</span>’Artisanat traditionnel marocain : un patrimoine vivant</h2>
+                <h3>Les principales formes d’artisanat</h3>
+                <p><span class="num">1.</span> La céramique et la poterie
+                    Fabrication d’ustensiles et d’objets décoratifs faits à la main.
+                    Particulièrement renommée dans les villes de <span class="s">Fès</span> et de <span
+                        class="s">Safi</span>.
+                </p>
+                <br>
+                <p><span class="num">2.</span> Le cuivre et l’argent
+                    Création d’objets décoratifs, de plateaux, et d’assiettes finement gravés.
+                    Ces œuvres reflètent l’adresse et la précision des artisans marocains.
+                </p>
+                <br>
+                <p><span class="num">3.</span> Le tissage et la laine
+                    Fabrication de tapis (<span class="s">Zarabi</span>), chapeaux, djellabas, et couvertures.
+                    Caractérisée par des motifs géométriques et des couleurs naturelles inspirées de l’environnement
+                    local.
+                </p>
+                <br>
+                <p><span class="num">4.</span> Le travail du bois et la sculpture
+                    Utilisé pour les portes, fenêtres, coffres, et meubles traditionnels.
+                    Les gravures et motifs minutieux ajoutent une touche artistique unique à chaque pièce.</p>
+                <h3>L’artisanat marocain à l’ère moderne</h3>
+                <p>L’artisanat joue aujourd’hui un rôle clé dans le tourisme <span class="s">culturel</span>, permettant
+                    aux visiteurs
+                    d’acheter des objets authentiques directement auprès des artisans.
+                    <br>
+                    Il contribue à préserver l’identité culturelle du <span class="s">Maroc</span> et à transmettre ce
+                    patrimoine vivant aux
+                    générations futures.
+                </p>
+                <h3>Quelques <span class="s">Photo</span> :</h3>
+                <div class="images">
+                    <img src="img/art1.jpg" alt="art">
+                    <img src="img/art2.jpg" alt="art">
+                    <img src="img/art3.jpg" alt="art">
+                    <img src="img/art4.jpg" alt="art">
+                    <img src="img/art5.jpg" alt="art">
+                    <img src="img/art6.jpg" alt="art">
+                </div>
+                <h2> <span class="s">Le</span> patrimoine architectural et historique du Maroc</h2>
+                <h3>L’architecture traditionnelle</h3>
+                <p>L’architecture traditionnelle marocaine se distingue par son harmonie entre beauté, spiritualité et
+                    fonctionnalité.
+                    Les maisons anciennes sont souvent construites autour d’un patio central, symbole d’intimité et de
+                    convivialité.
+                    Les matériaux utilisés — la terre, le plâtre, le bois et les <span class="s">zelliges</span> —
+                    reflètent un profond respect
+                    de l’environnement et de l’esthétique.</p>
+                <h3> Les médinas et les kasbahs</h3>
+                <p><span class="num">1. Les médinas</span></p>
+                <br>
+                <p>Cœurs historiques des grandes villes comme <span class="s">Fès, Marrakech, et Chefchaouen</span>, les
+                    médinas sont des
+                    labyrinthes de ruelles étroites, de souks animés et de mosquées anciennes.
+                    <br>
+                    Elles sont classées au Patrimoine mondial de l’UNESCO pour leur authenticité et leur richesse
+                    culturelle.
+                </p>
+                <br>
+                <p><span class="num">2. Les kasbahs et ksour</span></p>
+                <br>
+                <p>Situées principalement dans le sud du <span class="s">Maroc</span>, ces forteresses en pisé servaient
+                    autrefois à protéger
+                    les villages et les caravanes.
+                    <br>
+                    <span class="s">La Kasbah d’Aït Ben Haddou</span> est un exemple emblématique, célèbre dans le monde
+                    entier et souvent
+                    utilisée comme décor de cinéma
+                </p>
+                <h3>Les monuments historiques</h3>
+                <p>Le Maroc abrite de nombreux monuments qui témoignent de son passé glorieux :
+                    <br>
+                    <br>
+                    La mosquée Al Quaraouiyine à <span class="s">Fès</span>, fondée au IXe siècle, considérée comme la
+                    plus ancienne université
+                    au monde.
+                    <br>
+                    <br>
+                    La Tour Hassan à <span class="s">Rabat</span>, symbole d’un projet royal inachevé du XIIe siècle.
+                    <br>
+                    <br>
+                    Les remparts et portes monumentales de <span class="s">Marrakech, Fès et Meknès</span>, véritables
+                    chefs-d’œuvre
+                    d’architecture militaire et artistique.
+                </p>
+                <h3>Préservation et modernité</h3>
+                <p>Aujourd’hui, le <span class="s">Maroc</span> s’engage activement dans la préservation de son
+                    patrimoine architectural, tout
+                    en intégrant des éléments traditionnels dans les constructions modernes.
+                    Cette alliance entre héritage et innovation fait du <span class="s">Maroc</span> un exemple unique
+                    d’équilibre entre passé
+                    et présent.</p>
+                <h3>Quelques <span class="s">Photo</span> :</h3>
+                <div class="images">
+                    <img src="img/arch1.png" alt="arch">
+                    <img src="img/arch2.jpg" alt="arch">
+                    <img src="img/arch3.jpg" alt="arch">
+                    <img src="img/arch4.jpg" alt="arch">
+                    <img src="img/arch5.jpg" alt="arch">
+                    <img src="img/arch6.jpg" alt="arch">
+                </div>
+                <h2><span class="s">La</span> cuisine marocaine : un art du goût et de la tradition</h2>
+                <p>La cuisine marocaine est l’une des plus riches et des plus célèbres au monde. Elle se distingue par
+                    sa grande diversité et par la combinaison harmonieuse des influences arabes, berbères, andalouses et
+                    méditerranéennes. Elle repose sur des ingrédients frais et naturels comme les olives, les légumes,
+                    les fruits, les herbes aromatiques et les épices telles que la cannelle, le safran et le cumin.
+                    Parmi les plats les plus connus, on trouve le couscous, le tajine, la harira et la pastilla, qui
+                    reflètent tous un véritable art du goût et de la présentation. Enfin, le thé à la menthe occupe une
+                    place spéciale, symbole d’hospitalité et de convivialité au Maroc.</p>
+                <h3>Les ingrédients et les épices</h3>
+                <p>
+                    Les épices jouent un rôle essentiel dans la cuisine marocaine. Elles apportent couleur, arôme et
+                    caractère à chaque plat.
+                    Parmi les plus utilisées :
+                    <br>
+                    <br>
+                <ul>
+                    <li>le safran </li>
+                    <li>le cumin </li>
+                    <li>le gingembre </li>
+                    <li>la cannelle</li>
+                    <li>le ras el hanout (mélange d’épices typiquement marocain).</li>
+                </ul>
+                <br>
+
+                Les ingrédients de base comprennent la semoule, les légumes frais, la viande (surtout le mouton et le
+                poulet), et l’huile d’olive.
+                </p>
+                <h3>Les plats traditionnels emblématiques</h3>
+                <p><span class="num" style="text-decoration: underline;">Le couscous</span></p>
+                <br>
+                <p>
+                    Plat national par excellence, il est préparé avec de la semoule de blé, des légumes et de la
+                    viande.
+                    <br>
+                    Il se déguste traditionnellement le vendredi en famille.
+                </p>
+                <br>
+                <p><span class="num" style="text-decoration: underline;">Le tajine</span></p>
+                <br>
+                <p>
+                    Cuit lentement dans un plat en terre cuite, le <span class="s">tajine</span> se décline en plusieurs
+                    variétés : <span class="s">poulet au
+                        citron confit</span>, bœuf aux pruneaux, ou légumes de saison.
+                    <br>
+                    Son goût dépend du mélange d’épices et de la cuisson lente.
+                </p>
+                <br>
+                <p><span class="num" style="text-decoration: underline;">La pastilla</span></p>
+                <br>
+                <p>
+                    Spécialité de <span class="s">Fès</span>, ce plat associe le sucré et le salé avec du pigeon, des
+                    amandes et de la cannelle
+                    enveloppés dans une pâte fine.
+                </p>
+                <br>
+                <p><span class="num" style="text-decoration: underline;">La harira</span></p>
+                <br>
+                <p>
+                    Soupe traditionnelle à base de tomates, lentilles, pois chiches et coriandre.
+                    <br>
+                    Souvent consommée pendant le mois de <span class="s">Ramadan</span>.
+                    <br>
+                <h3>Les boissons et les douceurs marocaines</h3>
+                <p>
+                    Le thé à la menthe est la boisson nationale, symbole d’hospitalité.
+
+                    Les pâtisseries marocaines, comme les cornes de gazelle, <span class="s">les chebakia et les
+                        briouates au miel,
+                        accompagnent souvent le thé</span>.</p>
+                <h3> Un patrimoine culinaire vivant</h3>
+                <p>
+                    <span class="s">La cuisine</span> marocaine n’est pas seulement un art de la table, c’est une forme
+                    d’expression <span class="s">culturelle</span>.
+                    <br>
+                    Elle reflète les traditions, la convivialité et l’amour du partage qui caractérisent le peuple
+                    marocain.
+                </p>
+                <h3>Quelques <span class="s">Photo</span> :</h3>
+                <div class="images">
+                    <img src="img/food1.jpg" alt="img">
+                    <img src="img/food2.jpg" alt="img">
+                    <img src="img/food3.jpg" alt="img">
+                    <img src="img/food4.jpg" alt="img">
+                    <img src="img/food5.jpg" alt="img">
+                    <img src="img/food6.jpg" alt="img">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
