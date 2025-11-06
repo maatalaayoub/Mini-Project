@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    height: 100%;
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,6 +41,7 @@ footer {
     flex-direction: column;
     background-color: #1B2D41;
     padding: 20px;
+    width: 100%;
 }
 
 footer p {
