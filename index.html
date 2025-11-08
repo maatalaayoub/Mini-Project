@@ -67,10 +67,10 @@
             text-decoration: none;
             margin-left: 25px;
             display: inline-block;
-            border: 1px solid white;
+            border: 2px solid transparent;
             border-bottom: 2px solid white;
             border-radius: 50px;
-
+            transition: all 0.1s ease;
         }
 
         #accueil {
@@ -80,27 +80,24 @@
             background-color: #f66206;
             padding: 0px 15px;
             height: 35px;
-            transition: all 0.3s ease;
             gap: 5px;
         }
 
         #culture,
         #tourisme,
         #sport,
-        #contact,
-        #accueil {
+        #contact {
             display: inline-flex;
             align-items: center;
             padding: 0px 15px;
             height: 35px;
-            transition: all 0.3s ease;
             gap: 5px;
         }
 
         .navhover:hover {
             transform: scale(1.03);
-            background-color: #1C2E42;
-            text-decoration: underline;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
         }
 
         #accueil:hover {
@@ -156,7 +153,6 @@
             cursor: default;
             transition: all 0.3s ease;
         }
-
 
 
         .sblue {
@@ -226,7 +222,7 @@
             border-radius: 10px;
             transition: 0.3s ease;
             cursor: pointer;
-            box-shadow: 5px 5px 10px rgb(0,0,0,0.4);
+            box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 
         }
 
@@ -299,7 +295,7 @@
             width: 100%;
             max-width: 100%;
             transition: all 0.3s ease;
-            box-shadow: 5px 5px 4px rgb(0,0,0,0.4);
+            box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.2);
         }
 
         #roi:hover {
