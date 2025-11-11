@@ -17,6 +17,8 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     height: 100%;
     background-color: white;
     background-position: center;
@@ -24,6 +26,7 @@ body {
     background-size: cover;
     font-family: 'mfont';
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* header */
@@ -352,6 +355,69 @@ tr:hover td {
 
 .regionlogo:hover {
     transform: scale(1.05);
+}
+
+
+.divcard {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.cardimg {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 100%;
+}
+
+#card1 {
+    background-image: url('../images/plaisbahia.jpg');
+}
+
+#card2 {
+    background-image: url('../images/place_jemaa_fenae.jpg');
+}
+
+#card3 {
+    background-image: url('../images/marrakech_medina.jpg');
+}
+
+#card4 {
+    background-image: url('../images/Jardin_Majorelle.jpg');
+}
+
+.cardtxt {
+    border: 1px solid #1B2D41;
+    width: 40%;
+    border-radius: 0 8px 8px 0;
+    height: 100%;
+    background-color: white;
+    padding: 10px;
+}
+.cardtxt .titlee{
+    color: #1B2D41;
+    font-weight: bold;
+    text-align: start;
+    margin: 5px 0 20px;
+}
+.cardtxt .content{
+    color: #1B2D41;
+    text-align: start;
+    font-size: 1rem;
 }
 
 /* footer */
