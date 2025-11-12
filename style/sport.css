@@ -296,23 +296,25 @@ p {
     background-repeat: no-repeat;
     width: 200px;
     height: 250px;
-    border-radius:15px 15px 3px 3px;
+    border-radius: 15px 15px 3px 3px;
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
     margin-bottom: 10px;
 }
 
-.j:hover{
-    transform:scale(1.1);
-    border-radius:3px;
+.j:hover {
+    transform: scale(1.1);
+    border-radius: 3px;
 }
+
 .j:hover .j-name {
-   transform: translateY(+100px);
-   transition: all 1.5s ease;
+    transform: translateY(+50px);
 }
 
 .j-name {
+    transform: translateY(0);
+    transition: all 1s ease;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -326,81 +328,107 @@ p {
 #j1 {
     background-image: url('../images/bounou.jpg');
 }
+
 #j2 {
     background-image: url('../images/Munir-El-Kajoui.jpg');
 }
+
 #j3 {
     background-image: url('../images/Mehdi-Harrar.jpg');
 }
+
 #j4 {
     background-image: url('../images/Romain-Saïss.jpg');
 }
+
 #j5 {
     background-image: url('../images/Adam-Masina.jpg');
 }
+
 #j6 {
     background-image: url('../images/Mohamed-Chibi.jpg');
 }
+
 #j7 {
     background-image: url('../images/Jawad-El-Yamiq.jpg');
 }
-#j8{
+
+#j8 {
     background-image: url('../images/Noussair-Mazraoui.jpg');
 }
+
 #j9 {
     background-image: url('../images/Nayef-Aguerd.png');
 }
+
 #j10 {
     background-image: url('../images/Anass-Salah-Eddine.png');
 }
+
 #j11 {
     background-image: url('../images/Youssef_Belammari.jpg');
 }
+
 #j12 {
     background-image: url('../images/Sofyan_Amrabat.jpg');
 }
+
 #j13 {
     background-image: url('../images/Brahim-Díaz.png');
 }
+
 #j14 {
     background-image: url('../images/Sofiane-Diop.jpg');
 }
+
 #j15 {
     background-image: url('../images/Azzedine-Ounahi.png');
 }
+
 #j16 {
     background-image: url('../images/Ismael-Saibari.png');
 }
+
 #j17 {
     background-image: url('../images/Oussama-Targhaline.png');
 }
+
 #j18 {
     background-image: url('../images/Neil-El-Aynaoui.png');
 }
+
 #j19 {
     background-image: url('../images/Bilal-El-Khannouss.png');
 }
+
 #j20 {
     background-image: url('../images/Youssef-En-Nesyri.png');
 }
+
 #j21 {
     background-image: url('../images/Ayoub-El-Kaabi.png');
 }
+
 #j22 {
     background-image: url('../images/Soufiane-Rahimi.png');
 }
+
 #j23 {
     background-image: url('../images/Abdessamad-Ezzalzouli.jpg');
 }
+
 #j24 {
     background-image: url('../images/Ilias-Akhomach.png');
 }
+
 #j25 {
     background-image: url('../images/benseghir.jpg');
 }
+
 #j26 {
     background-image: url('../images/Hamza-Igmane.png');
 }
+
 #j27 {
     background-image: url('../images/Chemsdine-Talbi.png');
 }
@@ -533,9 +561,9 @@ footer a {
         font-size: 1.1rem;
     }
 
-     .j {
-        width: 185px;
-        height: 235px;
+    .j {
+        width: 170px;
+        height: 220px;
     }
 
     .j-name {
