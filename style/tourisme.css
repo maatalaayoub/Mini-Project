@@ -61,6 +61,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
+     box-shadow: 10px 10px 10px rgba(235, 2, 2, 0.126);
 }
 
 .logo {
@@ -346,8 +347,7 @@ tr:hover td {
 }
 
 .regionlogo {
-    border: 1px solid #2c333c;
-    box-shadow: 5px 5px 9px rgb(0, 0, 0, 0.2);
+    border: 2px solid rgb(237, 215, 215);
     border-radius: 5px;
     width: 200px;
     height: 200px;
@@ -375,7 +375,6 @@ tr:hover td {
     display: flex;
     height: 450px;
     border-radius: 8px;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 20px 0;
 }
@@ -442,7 +441,7 @@ tr:hover td {
 }
 
 .cardtxt {
-    border: 1px solid #1B2D41;
+    border: 2px solid rgb(237, 215, 215);
     width: 40%;
     border-radius: 0 8px 8px 0;
     height: 100%;
